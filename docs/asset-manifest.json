@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/bubblegum/static/css/main.a0544561.css",
+    "main.js": "/bubblegum/static/js/main.8133ad80.js",
+    "static/js/787.690a7225.chunk.js": "/bubblegum/static/js/787.690a7225.chunk.js",
+    "static/media/organic.gif": "/bubblegum/static/media/organic.30eeabe67c9edcbabde7.gif",
+    "static/media/trash.png": "/bubblegum/static/media/trash.5865c92740f85f97e52c.png",
+    "index.html": "/bubblegum/index.html",
+    "main.a0544561.css.map": "/bubblegum/static/css/main.a0544561.css.map",
+    "main.8133ad80.js.map": "/bubblegum/static/js/main.8133ad80.js.map",
+    "787.690a7225.chunk.js.map": "/bubblegum/static/js/787.690a7225.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a0544561.css",
+    "static/js/main.8133ad80.js"
+  ]
+}

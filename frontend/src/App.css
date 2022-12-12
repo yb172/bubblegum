@@ -1,0 +1,160 @@
+body {
+  text-align: center;  
+  cursor: grab;
+  transform: color 0.1s;
+  font-family: "Dosis", sans-serif;
+}
+
+body:active {
+  cursor: grabbing;
+}
+
+::selection {
+  background: #FFB6C1;
+}
+
+.gum {
+  background: #FFB6C1;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  height: 100vh;
+  overflow: hidden;
+  line-height: 16px;
+  letter-spacing: 1px;
+  transition: line-height 0.1s, letter-spacing 0.1s;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.gum-col {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.gum-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.gum-cell {
+  display: block;
+  width: 30px;  
+}
+
+.wrap {
+  margin-top: 20%;
+}
+
+.ribbon-upper-text {
+  margin-top: 20px;
+  margin-left: -100px;
+}
+.ribbon-lower-text {
+  margin-left: 100px;
+}
+
+/* Credit: Katy DeCorah: https://katydecorah.com/code/z-index-and-transform/ */
+.ribbon {
+  background: #FFB6C1;
+  display: inline-block;
+  color: #f4f4f4;
+  padding: 0.5em 0.7em;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  position: relative;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  transform-style: preserve-3d;
+  transform: rotate(-20deg) skew(-20deg, 10deg);
+}
+.ribbon:before, .ribbon:after {
+  content: "";
+  width: 0;
+  height: 1em;
+  display: block;
+  background: #4993da;
+  position: absolute;
+  border-style: solid;
+  border-width: 0.5em;
+  z-index: -1;
+  transform: translateZ(-1em);
+}
+.ribbon:before {
+  left: -0.5em;
+  top: 0.5em;
+  border-color: #f5a2ae #FF69B4 #f5a2ae #f5a2ae;
+}
+.ribbon:after {
+  right: -0.5em;
+  top: -0.5em;
+  border-color: #f5a2ae #f5a2ae #f5a2ae #FF69B4;
+}
+
+.organic-label {
+  margin-top: 40px;
+  background-color: #ddd;
+  padding: 15px;
+  padding-bottom: 18px;
+  color: #555;
+}
+
+.organic-logo {
+  display: inline-block;
+  margin-bottom: -7px;
+}
+
+.product-info-label {
+  color: #ccc;
+  font-size: 12px;
+  width: 300px;
+  margin: 30px auto;
+}
+
+/* Credit: https://getcssscan.com/css-buttons-examples */
+.btn {
+  border-radius: 8px;
+  border-width: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 10px 12px;
+  text-align: center;
+  transition: all 200ms;
+  vertical-align: baseline;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#UnwrapBtn {
+  color: white;
+  background-color: #FFB6C1;
+  font-size: 20px;
+  padding: 12px 16px;
+}
+
+#DoneBtn {
+  color: white;
+  background-color: rgb(156, 216, 156);
+}
+
+.done-panel {
+  position: absolute;
+  bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.75);
+  width: 100%;
+}
+
+.trash-icon {
+  opacity: .65;
+  margin: 20px;
+}
