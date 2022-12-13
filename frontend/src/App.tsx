@@ -9,6 +9,9 @@ const wrapViewId = "wrap";
 const gumViewId = "gum";
 const trashViewId = "trash";
 
+const doneBtnId = "DoneBtn";
+const doneTextId = "DoneText";
+
 const download = () => {
   const element = document.getElementById(gumElementId);
   if (!element) {
@@ -36,12 +39,19 @@ const App = () => {
   };
 
   const done = () => {
-    const btn = document.getElementById("DoneBtn");
-    if (!btn) return;
-    btn.classList.add("disabled");
-    btn.setAttribute("disabled", "true");
+    const doneBtn = document.getElementById(doneBtnId);
+    if (!doneBtn) return;
+    doneBtn.classList.add("disabled");
+    doneBtn.style.display = "none";
 
-    download();
+    const doneText = document.getElementById(doneTextId);
+    if (!doneText) return;
+    doneText.innerHTML = "Wrapping up...";
+
+    setTimeout(() => {
+      download();
+    }, 100);
+
     setTimeout(() => {
       setView(trashViewId);
     }, 1000);
@@ -95,9 +105,10 @@ const App = () => {
       <Gum />
       <div className="done-panel">
         <p>
-          Tap on pink to chew, long tap to bubble&nbsp;
+          <span id={doneTextId}>Tap on pink to chew, long tap to bubble</span>
+          &nbsp;
           {showDoneBtn && (
-            <button className="btn" id="DoneBtn" onClick={done}>
+            <button className="btn" id={doneBtnId} onClick={done}>
               I'm done
             </button>
           )}

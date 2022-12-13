@@ -46,7 +46,10 @@ body:active {
 }
 
 .wrap {
-  margin-top: 30%;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  width: 100%;
 }
 
 .ribbon-upper-text {
