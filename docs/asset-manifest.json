@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/bubblegum/static/css/main.a771a61e.css",
-    "main.js": "/bubblegum/static/js/main.c2519940.js",
+    "main.css": "/bubblegum/static/css/main.056dbaa0.css",
+    "main.js": "/bubblegum/static/js/main.45a8944f.js",
     "static/js/787.690a7225.chunk.js": "/bubblegum/static/js/787.690a7225.chunk.js",
     "static/media/organic.gif": "/bubblegum/static/media/organic.30eeabe67c9edcbabde7.gif",
     "static/media/trash.png": "/bubblegum/static/media/trash.5865c92740f85f97e52c.png",
     "index.html": "/bubblegum/index.html",
-    "main.a771a61e.css.map": "/bubblegum/static/css/main.a771a61e.css.map",
-    "main.c2519940.js.map": "/bubblegum/static/js/main.c2519940.js.map",
+    "main.056dbaa0.css.map": "/bubblegum/static/css/main.056dbaa0.css.map",
+    "main.45a8944f.js.map": "/bubblegum/static/js/main.45a8944f.js.map",
     "787.690a7225.chunk.js.map": "/bubblegum/static/js/787.690a7225.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a771a61e.css",
-    "static/js/main.c2519940.js"
+    "static/css/main.056dbaa0.css",
+    "static/js/main.45a8944f.js"
   ]
 }
