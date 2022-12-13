@@ -36,6 +36,11 @@ const App = () => {
   };
 
   const done = () => {
+    const btn = document.getElementById("DoneBtn");
+    if (!btn) return;
+    btn.classList.add("disabled");
+    btn.setAttribute("disabled", "true");
+
     download();
     setTimeout(() => {
       setView(trashViewId);
@@ -89,14 +94,14 @@ const App = () => {
     <div>
       <Gum />
       <div className="done-panel">
-        <p>Tap to chew, long tap to bubble&nbsp;</p>
-        {showDoneBtn && (
-          <p>
+        <p>
+          Tap on pink to chew, long tap to bubble&nbsp;
+          {showDoneBtn && (
             <button className="btn" id="DoneBtn" onClick={done}>
               I'm done
             </button>
-          </p>
-        )}
+          )}
+        </p>
       </div>
     </div>
   );

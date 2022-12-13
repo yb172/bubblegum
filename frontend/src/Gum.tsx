@@ -3,6 +3,7 @@ import React, { useState } from "react";
 const startGumSize = 16;
 export const gumElementId = "TheGum";
 const impurityStep = 0.005;
+const guaranteedBubbleSize = 10;
 
 const getRandomVisibleChar = (seed: number): string => {
   const asciiStart = 32; // space
@@ -114,7 +115,10 @@ export const Gum = () => {
       colorIdx++;
       setGumColor(colorIdx);
       ticks++;
-      if (ticks > 5 && Math.random() < 1 - particle.impurityProbability) {
+      if (
+        ticks > guaranteedBubbleSize &&
+        Math.random() < 1 - particle.impurityProbability
+      ) {
         endBubble();
       }
     }, 200);

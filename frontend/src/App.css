@@ -46,7 +46,7 @@ body:active {
 }
 
 .wrap {
-  margin-top: 20%;
+  margin-top: 30%;
 }
 
 .ribbon-upper-text {
@@ -145,12 +145,18 @@ body:active {
 #DoneBtn {
   color: white;
   background-color: rgb(156, 216, 156);
+  margin-left: 10px;
+}
+
+#DoneBtn.disabled {
+  background-color: #ccc;
 }
 
 .done-panel {
   position: absolute;
   bottom: 20px;
   background-color: rgba(255, 255, 255, 0.75);
+  line-height: 40px;
   width: 100%;
 }
 
