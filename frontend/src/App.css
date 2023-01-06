@@ -22,7 +22,7 @@ body:active {
   overflow: hidden;
   line-height: 16px;
   letter-spacing: 1px;
-  transition: line-height 0.1s, letter-spacing 0.1s;
+  transition: line-height 0.1s, letter-spacing 0.1s, font 0.2s;
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
@@ -42,7 +42,7 @@ body:active {
 
 .gum-cell {
   display: block;
-  width: 30px;  
+  width: 30px;
 }
 
 .wrap {

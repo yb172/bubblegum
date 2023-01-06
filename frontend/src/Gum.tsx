@@ -67,6 +67,7 @@ const setGumSize = (size: number) => {
   if (theGum == null) {
     return;
   }
+  theGum.style.fontSize = `${size}px`;
   theGum.style.lineHeight = `${size}px`;
   theGum.style.letterSpacing = `${size - 15}px`;
 };
@@ -121,7 +122,7 @@ export const Gum = () => {
       ) {
         endBubble();
       }
-    }, 200);
+    }, 500);
   };
 
   const endBubble = () => {
