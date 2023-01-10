@@ -35,7 +35,7 @@ const App = () => {
     setView(gumViewId);
     setTimeout(() => {
       setShowDoneBtn(true);
-    }, 5000);
+    }, 10000);
   };
 
   const done = () => {

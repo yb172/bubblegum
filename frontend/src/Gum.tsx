@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const startGumSize = 16;
 export const gumElementId = "TheGum";
 const impurityStep = 0.005;
-const guaranteedBubbleSize = 10;
+const guaranteedBubbleSize = 20;
 
 const getRandomVisibleChar = (seed: number): string => {
   const asciiStart = 32; // space
@@ -122,7 +122,7 @@ export const Gum = () => {
       ) {
         endBubble();
       }
-    }, 500);
+    }, 200);
   };
 
   const endBubble = () => {
